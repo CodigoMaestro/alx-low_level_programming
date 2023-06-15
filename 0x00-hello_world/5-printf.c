@@ -2,7 +2,8 @@
 
 /**
  * main - entry point
- * return: 0
+ * description - prints the text using printf
+ * Return: 0
  */
 
 int main(void)
