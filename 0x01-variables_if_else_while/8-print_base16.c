@@ -1,21 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- * Return: 0
+ * main - Entry point
+ *
+ * Return: Always 0
  */
 
 int main(void)
 {
 	int i;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 16; i++)
 	{
-		putchar(i + '0');
-	}
-	for (i = 0; i < 6; i++)
-	{
-		putchar(i + 'a');
+		if (i < 10)
+		{
+			putchar(i + '0');
+		}
+		else
+		{
+			putchar(i - 10 + 'a');
+		}
 	}
 	putchar('\n');
 	return (0);

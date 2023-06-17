@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- * Return: 0
+ * main - Entry point
+ * Description: returns alphabet in script that prints alphabet
+ * Return: Always 0
  */
 
 int main(void)

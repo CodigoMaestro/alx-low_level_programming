@@ -1,17 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- * Return: 0
+ * main - Entry point
+ *
+ * Return: Always 0
  */
 
 int main(void)
 {
-	char i;
+	char lower;
 
-	for (i = 'z'; i >= 'a'; i--)
+	for (lower = 'z'; lower >= 'a'; lower--)
 	{
-		putchar(i);
+		putchar(lower);
 	}
 	putchar('\n');
 	return (0);
