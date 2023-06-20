@@ -3,6 +3,7 @@
 /**
  * _islower - entry point
  * @c: int
+ * Return: 0
  */
 
 int _islower(int c)
