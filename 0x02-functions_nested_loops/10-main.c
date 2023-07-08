@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - check the code
@@ -7,9 +8,9 @@
  */
 int main(void)
 {
-    char *str;
+    int n;
 
-    str = "Welcome to Rocodeify";
-    print_rev(str);
+    n = add(89, 9);
+    printf("%d\n", n);
     return (0);
 }
