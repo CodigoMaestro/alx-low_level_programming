@@ -13,12 +13,18 @@ int **alloc_grid(int width, int height)
 	int i, j;
 	int **rows;
 
+	if (width <= 0 || height <= 0)
+	{
+		return (NULL);
+	}
+
 	rows = (int **)malloc(height * sizeof(int *));
 
 	if (rows == NULL)
 	{
 		return (NULL);
 	}
+
 	for (i = 0; i < height; i++)
 	{
 		rows[i] = (int *)malloc(width * sizeof(int));
@@ -39,22 +45,4 @@ int **alloc_grid(int width, int height)
 		}
 	}
 	return (rows);
-}
-
-/**
- * free_grid - entry point
- * @grid: int
- * @height: int
- * Return: 0
- */
-
-void free_grid(int **grid, int height)
-{
-	int i;
-
-	for (i = 0; i < height; i++)
-	{
-		free(grid[i]);
-	}
-	free(grid);
 }
