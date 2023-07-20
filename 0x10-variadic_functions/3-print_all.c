@@ -66,7 +66,8 @@ void print_all(const char * const format, ...)
 
 			default:
 				flag = 0;
-				break;
+				x++;
+				continue;
 		}
 		if (flag && x < count - 1)
 			printf(", ");
