@@ -1,7 +1,8 @@
 #include "lists.h"
 #include <stddef.h>
 
-/**listint_len - entry point
+/**
+ * listint_len - entry point
  * @h: listint_t
  * Return: count
  */
