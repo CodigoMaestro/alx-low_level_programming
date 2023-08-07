@@ -32,14 +32,9 @@ int create_file(const char *filename, char *text_content)
 
 	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
 
-	if (fd == -1)
-	{
-		return (-1);
-	}
-
 	textWrite = write(fd, text_content, len);
 
-	if (textWrite == -1)
+	if (fd == -1 && textWrite == -1)
 	{
 		return (-1);
 	}
