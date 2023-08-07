@@ -11,7 +11,7 @@
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int fd, len, bytesWrite;
+	int fd, bytesWrite, len = 0;
 
 	if (filename == NULL)
 	{
